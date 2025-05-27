@@ -1,2 +1,10 @@
 hdpesy
 bdalab369
+hadoop jar /home/chaitanya/hadoop-3.4.1/share/hadoop/tools/lib/hadoop-
+streaming-3.4.1.jar \
+-input /salary/input \
+-output /salary/output_avg_salary \
+-mapper salary_mapper.py \
+-reducer salary_reducer.py \
+-file salary_mapper.py \
+-file average_salary_reducer.py
